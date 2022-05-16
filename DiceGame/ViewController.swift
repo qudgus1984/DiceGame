@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     @IBAction func rollButtonTapped(_ sender: UIButton) {
         
         // 첫 번째 이미지뷰의 이미지를 랜덤으로 변경
-        firstImageView.image = diceArray[3]
+        firstImageView.image = diceArray.randomElement()
         
         // 두 번째 이미지뷰의 이미지를 랜덤으로 변경
-        secondImageView.image = diceArray[3]
+        secondImageView.image = diceArray.randomElement()
         
     }
     
